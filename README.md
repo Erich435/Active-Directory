@@ -15,7 +15,7 @@ This lab consists of Windows Server 2019 - Configured as Domain Controller 1 (DC
    - DNS Server: **192.168.50.5 (Self)**
    - Active Directory Domain Services installed and configured
 
-2. Deploy a Windows 11 Pro virtual machine with the following configuration:
+2. Deploy a Windows 11 Pro virtual machine with the following parameters:
    - Hostname: **Workstation1**
    - Local administrator account configured
    - Static IP Address: **192.168.50.50/24**
