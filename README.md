@@ -1,35 +1,49 @@
 # Active-Directory-
+This lab consists of Windows Server 2019 - Configured as Domain Controller 1 (DC01) and a Windows 11 Pro host. Both Operating Systems will be installed onto Virtual Machines within VMware Workstation Pro to simulate a small enterprise environment.
+# Technologies Used:
+* VMware Workstation Pro
+* Windows Server 2019
+* Windows 11 Pro
+* Active Directory Domain Services
+* DNS
+* Group Policy Objects (GPO)
+  
+# Tasks
+1. Deploy a Windows Server 2019 virtual machine configured as a Domain Controller with the following parameters:
+   - Hostname: **DC01**
+   - Static IP Address: **192.168.50.5**
+   - DNS Server: **192.168.50.5 (Self)**
+   - Active Directory Domain Services installed and configured
 
-This lab consist of Windows Server 2019 - Configured as Domain Controller 1 (DC01) and a Windows 11 Pro host. Both Operating Systems will be installed onto Virtual Machines within VMware Workstation Pro.
+2. Deploy a Windows 11 Pro virtual machine with the following configuration:
+   - Hostname: **Workstation1**
+   - Local administrator account configured
+   - Static IP Address: **192.168.50.50**
+   - DNS Server: **192.168.50.5**
+   - Successfully joined to the Active Directory domain and verified using command-line tools
 
-### The goals of this lab were: 
-1 - Deploy a Windows Server 2019 as a virtual machine with the following parameters:
-  * PC name: "DC01"
-  * Static IP: 192.168.50.5
-  * DNS Server: 192.168.50.5 (Self)
-  * Configure as Domain Controller
-  * Active Directory installation
+3. Configure Active Directory user accounts:
+   - **ITadmin**
+   - **John**
+   - **ServiceDesk**
+   - Verified that all domain users were able to authenticate and log in to **Workstation1**
 
-2 - Deploy a Windows 11 Pro as a virtual machine with the following parameters:
-  * PC name: "Workstation1"
-  * Local user account: "administrator"
-  * Static IP: 192.168.50.50
-  * DNS Server: 192.168.50.5
-  * Joined to domain + verification using command line
+4. Configure Active Directory Group Policy:
+   - Created security group **Corporate**
+   - Added users **ITadmin** and **ServiceDesk** to the **Corporate** group
+   - Assigned user **John** to the standard **Users** group
+   - Created and applied a Group Policy Object to enforce a standardized desktop background
 
-3 - Configure Active Directory and create the following users
-  * "ITadmin" 
-  * "Eric"
-  * "ServiceDesk"
-  Verify these accounts can be logged into from "Workstation1" host PC.
-
-### Lab Topology 
+# Lab Topology 
 
 Device | OS | Hostname | IP Address |
-***************************************
+
 Domain Controller | Windows Server 2019 | DC01 | 192.168.50.5
+
 Client | Windows 11 Pro | Workstation1 | 192.168.50.50
 
+# Documentation
+Documentation and step by step instructions can be found in the /docs directory.
 
 
 
