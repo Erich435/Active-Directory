@@ -11,14 +11,14 @@ This lab consists of Windows Server 2019 - Configured as Domain Controller 1 (DC
 # Tasks
 1. Deploy a Windows Server 2019 virtual machine configured as a Domain Controller with the following parameters:
    - Hostname: **DC01**
-   - Static IP Address: **192.168.50.5**
+   - Static IP Address: **192.168.50.5/24**
    - DNS Server: **192.168.50.5 (Self)**
    - Active Directory Domain Services installed and configured
 
 2. Deploy a Windows 11 Pro virtual machine with the following configuration:
    - Hostname: **Workstation1**
    - Local administrator account configured
-   - Static IP Address: **192.168.50.50**
+   - Static IP Address: **192.168.50.50/24**
    - DNS Server: **192.168.50.5**
    - Successfully joined to the Active Directory domain and verified using command-line tools
 
@@ -38,9 +38,9 @@ This lab consists of Windows Server 2019 - Configured as Domain Controller 1 (DC
 
 Device | OS | Hostname | IP Address |
 
-Domain Controller | Windows Server 2019 | DC01 | 192.168.50.5
+Domain Controller | Windows Server 2019 | DC01 | 192.168.50.5/24
 
-Client | Windows 11 Pro | Workstation1 | 192.168.50.50
+Client | Windows 11 Pro | Workstation1 | 192.168.50.50/24
 
 # Documentation
 Documentation and step by step instructions can be found in the /docs directory.
