@@ -34,8 +34,8 @@
   * Hostname shows as Workstation1
   * System properties shows that this client machine is connected to **lab.local** domain
 
-![Static IP Addressing Scheme](docs/images/W11IP.png) 
-![Ping to DC](docs/images/Ping.png)
-![Ipconfig Command Prompt](docs/images/IPconfig2.png)
-![System Properties](docs/images/Sysproperties.png)
+![Static IP Addressing Scheme](/docs/images/W11IP.png) 
+![Ping to DC](/docs/images/Ping.png)
+![Ipconfig Command Prompt](/docs/images/IPconfig2.png)
+![System Properties](/docs/images/Sysproperties.png)
 ![About](/docs/images/About.png)
