@@ -37,3 +37,7 @@
 * Ipconfig shows correct addressing scheme
 * Hostname shows as **DC01**
 * Active Directory Users and Computers installed and runs
+
+![DC01 Static IP Configuration](images/StaticIP.png)
+![Ipconfig Verification](images/Ipconfig.png)
+![Active Directory Users and Computers](images/ADUC.png)
