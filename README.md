@@ -29,10 +29,11 @@ This lab consists of Windows Server 2019 - Configured as Domain Controller 1 (DC
    - Verified that all domain users were able to authenticate and log in to **Workstation1**
 
 4. Configure Active Directory Group Policy:
-   - Created security group **Corporate**
-   - Added users **ITadmin** and **ServiceDesk** to the **Corporate** group
-   - Assigned user **John** to the standard **Users** group
-   - Created and applied a Group Policy Object to enforce a standardized desktop background
+   - Create an OU named **ITOffice**
+   - Create an OU named **Users (OU)** 
+   - Assign users **ITadmin** and **ServiceDesk** to the **ITOffice** group
+   - Assign user **John** to the **Users** group
+   - Create and apply a Group Policy Object to enforce a standardized desktop background
 
 # Lab Topology 
 
