@@ -1,4 +1,4 @@
-# Active-Directory-
+# Active-Directory
 This lab consists of Windows Server 2019 - Configured as Domain Controller 1 (DC01) and a Windows 11 Pro host. Both Operating Systems will be installed onto Virtual Machines within VMware Workstation Pro to simulate a small enterprise environment.
 # Technologies Used:
 * VMware Workstation Pro
